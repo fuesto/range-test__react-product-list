@@ -1,0 +1,162 @@
+/* Reset all elements to provide a clean slate */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent line-height and font-smoothing for better readability */
+html {
+  line-height: 1.15; /* Adjust line height for better legibility */
+  text-size-adjust: 100%; /* Prevent font size adjustments in mobile browsers */
+  -webkit-font-smoothing: antialiased; /* Smooth fonts on macOS */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts on macOS */
+}
+
+/* Ensure consistent styles for body */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove default styles for lists */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset links to have no default styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove all borders from elements where they are commonly used */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset forms for better cross-browser consistency */
+button, input, textarea, select {
+  font: inherit; /* Inherit font styles from body */
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none; /* Prevent unexpected resizing */
+}
+
+:focus {
+  outline: none; /* Remove default focus outlines */
+}
+
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+}
+  
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+.sorting-buttons {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.sorting-buttons button {
+  border: 1px solid #ccc;
+  color: #000;
+  font-weight: 500;
+  background-color: transparent;
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1.2rem
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-grid__content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%
+}
+
+
+.product-card img {
+  max-width: 70%;
+  margin: 0 auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.review-score {
+  color: green;
+}
+
+.was-price {
+  color: red;
+  text-decoration: line-through;
+}
+
+.load-more {
+  margin-top: 25px;
+}
+
+button {
+  background-color: #f60;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+button:hover {
+  background-color: #d45000;
+}
+  
+
